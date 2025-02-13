@@ -13,7 +13,7 @@ html, body{
     margin: 0; padding: 0;
     font-family: 'Yaldevi', sans-serif;
     line-height: 1.5;
-    font-size: clamp(12px, calc(0.4rem + 1vw) , 30px);
+    font-size: clamp(14px, calc(0.4rem + 0.8vw) , 30px);
     background-color: var(--light);
     color: var(--dark);
     scroll-behavior: smooth;
@@ -77,7 +77,7 @@ h1, h2{
 
 .logo_svg{
     margin-left: -0.5rem;
-    height: clamp(100px, calc(10rem + 20vh) , 686px);
+    height: clamp(100px, calc(10rem + 20vw) , 686px);
     width: auto;
 }
 
@@ -122,7 +122,7 @@ h1, h2{
 }
 
 .form{
-    height: clamp(100px, calc(10rem + 20vh) , 686px);
+    height: clamp(100px, calc(10rem + 20vw) , 686px);
     width: auto;
 }
 
@@ -179,7 +179,7 @@ h3{
 
 .cont_1 .profile, .cont_2 .work_2, .cont_4 .work_4{
     grid-column: 1;
-    height: clamp(100px, calc(16rem + 30vh) , 886px);
+    height: clamp(100px, calc(12rem + 28vw) , 686px);
     width: auto;
 }
 
@@ -202,7 +202,7 @@ h3{
     order: 2;
     grid-row: 1;
     grid-column: 3;
-    height: clamp(100px, calc(16rem + 30vh) , 886px);
+    height: clamp(100px, calc(12rem + 28vw) , 886px);
     width: auto;
 }
 
@@ -213,7 +213,7 @@ h3{
 
 .line_1_img{
     position: absolute;
-    width: 84%; height: 70%;
+    width: 84%; height: auto;
     left: 8%; right: 8%; 
     top: 8%;
     margin: 0;
@@ -235,7 +235,6 @@ h3{
     bottom: 2rem;
     margin: 0;
 }
-
 
 .splide_blue{
     background-color: var(--blue);
@@ -387,20 +386,25 @@ h3{
         font-family: 'Barriecito', sans-serif;
         font-size: clamp(20px, calc(2rem + 6vw) , 206px);
     }
+
+    .form{
+        height: clamp(80px, calc(10rem + 16vw) , 586px);
+        width: auto;
+    }
     /*about untereinander*/
     
 .content_1, .content_2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.4fr;
+    grid-template-rows: auto auto;
     justify-items: center;
 }
 
 .cont_1 .profile, .cont_2 .work_2, .cont_4 .work_4{
     grid-row: 1;
     grid-column: 1;
-    height: clamp(100px, calc(16rem + 30vh) , 886px);
-    width: auto;
+    height: auto;
+    width: clamp(80px, calc(12rem + 19vw) , 686px);
 }
 
 .cont_1 .welcome, .cont_2 .text, .cont_4 .text{
@@ -409,6 +413,7 @@ h3{
     text-align: center;
     padding-bottom: 2rem;
 }
+
 
 .cont_1 .text, .cont_3 .text{
     grid-row: 2;
@@ -420,8 +425,8 @@ h3{
 .cont_1 .work_1, .cont_3 .work_3{
     grid-row: 1;
     grid-column: 1;
-    height: clamp(100px, calc(16rem + 30vh) , 886px);
-    width: auto;
+    height: auto;
+    width: clamp(80px, calc(12rem + 19vw) , 686px);
 }
 
     /*resume untereinander*/
@@ -552,7 +557,4 @@ h3{
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-
-  /*Fehlt noch:
-    Content
-  */
+  /** The small pictures in works are all pixelated bc I wasn't able to get them smaller without pixel and espacially the videos i had to screenshot in small otherwise there was the pause thing on there -.- **/
