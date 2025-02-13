@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanKa Studios - Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hamburger.css">
+</head>
+<body>
+    <header class="header">
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="small_logo_div">
+            <a href="../index.html">   
+            <picture>
+                <source class="small_logo" srcset="../assets/icon/logo_small.svg" type="image/svg+xml">
+                <img class="small_logo" src="../assets/icon/logo_small.svg" alt="Small Ellipse" />
+            </picture>
+            </a>
+        </div>
+        <nav>
+            <ul class="navigation">
+            <li class="about"><a href="../index.html">About</a>
+                <picture>
+                    <source class="small_form ellipse" srcset="../assets/forms/ellipse.svg" type="image/svg+xml">
+                    <img class="small_form ellipse" src="../assets/forms/ellipse.svg" alt="Small Ellipse" />
+                </picture></li>
+            <li class="works"><a href="./works.html">Works</a>
+                <picture>
+                    <source class="small_form rectangle" srcset="../assets/forms/rectangle.svg" type="image/svg+xml">
+                    <img class="small_form rectangle" src="../assets/forms/rectangle.svg" alt="Small Rectangle" />
+                </picture></li>
+            <li class="hidden"><a href="../index.html">             
+                <picture>
+                    <source class="logo_svg" srcset="../assets/icon/logo.svg" type="image/svg+xml">
+                    <img class="logo_svg" src="../assets/icon/logo.svg" alt="LankaStudios Logo" />
+                </picture></a>  
+            </li>
+            <li class="resume"><a href="./resume.html">Resumé</a>
+                <picture>
+                    <source class="small_form triangle" srcset="../assets/forms/triangle.svg" type="image/svg+xml">
+                    <img class="small_form triangle" src="../assets/forms/triangle.svg" alt="Small Triangle" />
+                </picture></li>
+            <li class="contact active"><a href="./contact.html">Contact</a>
+                <picture>
+                    <source class="small_form star" srcset="../assets/forms/star.svg" type="image/svg+xml">
+                    <img class="small_form star" src="../assets/forms/star.svg" alt="Small Star" />
+                </picture>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="title">
+        <h1 class="headline">Contact</h1>
+        <picture>
+            <source class="form star" srcset="../assets/forms/star.svg" type="image/svg+xml">
+            <img class="form star" src="../assets/forms/star.svg" alt="Big Star" />
+        </picture>
+        </div>
+
+        <div class="contact_list">
+            <ul>
+                <li><img class="icon email" src="../assets/icon/email.svg" alt="Email Icon" /><span class="info email">leanneklemm@gmail.com</span></li>
+                <li><img class="icon number" src="../assets/icon/number.svg" alt="Phone Icon" /><span class="info number">+49 151 10797553</span></li>
+                <li><img class="icon insta" src="../assets/icon/insta.svg" alt="Insta Icon" /><span class="info insta">lanka_studios_</span></li>
+                <li><img class="icon discord" src="../assets/icon/discord.svg" alt="Discord Icon" /><span class="info discord">lanka3d</span></li>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <nav class="foot_nav">
+            <li><a href="../html/datenschutz.html">Privace Policy</a></li>
+            <li><a href="#">
+                <picture>
+                <source class="arrow_svg" srcset="../assets/forms/arrow.svg" type="image/svg+xml">
+                <img class="arrow_svg" src="../assets/forms/arrow.svg" alt="Arrow Up" />
+                </picture>
+            </a></li>
+            <li><a href="../html/impressum.html">Legal Details</a></li>
+        </nav>
+    </footer>
+
+    <script>
+        let hamburgerIcon = document.querySelector(".hamburger-icon");
+        let header = document.querySelector(".header");
+        console.log(hamburgerIcon);
+
+        hamburgerIcon.addEventListener("click", (e)=>{
+            header.classList.toggle("on");
+        })
+    </script>
+</body>
+</html>

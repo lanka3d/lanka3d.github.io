@@ -1,0 +1,107 @@
+@media screen and (max-width: 724px) {
+    .header{
+        display: flex;
+        left: 0; top: 0; width: 100%;
+        background-color: var(--light);
+        padding-bottom: 2rem;
+        /*box-shadow: 0 0 30px rgba(57, 57, 57, 0.3);*/
+        height: 80px;
+        overflow: hidden;
+        transition: all 1s;
+        position: fixed;
+        z-index: 1500;
+    }
+
+    .header.on{
+        height: 100dvh;
+    }
+
+    .small_logo_div{
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 25px;
+    }
+
+    .hamburger-icon{
+        position: fixed;
+        right: 0; top: 0;
+        padding: 40px;
+    }
+
+    .hamburger-icon div{
+        background-color: var(--dark);
+        width: 36px; height: 2px;
+        margin-bottom: 12px;
+    }
+
+    .hamburger-icon div:nth-child(2){
+        visibility: visible;
+    }
+
+    .header.on .hamburger-icon div:first-child{
+        position: absolute;
+        rotate: 45deg;
+        width: 38px;
+        margin-top: 14px;
+        transition: all 0.5s;
+    }
+    .header.on .hamburger-icon div:nth-child(2){
+        visibility: hidden;
+    }
+    .header.on .hamburger-icon div:last-child{
+        rotate: -45deg;
+        width: 38px;
+        position: absolute;
+        transition: all 0.5s;
+
+    }
+
+    .hamburger-icon div:last-child{
+        margin: 0;
+    }
+
+    .header nav{
+        text-align: center;
+        width: 100%;
+    }
+
+    .navigation{
+        display: flex;
+        margin-top: 120px;
+        flex-direction: column;
+        font-size: clamp(40px, calc(2rem + 3vw) , 86px);
+    }
+
+    .navigation li{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        color: var(--dark);
+    }   
+
+    .small_form{
+        visibility: visible;
+        height: clamp(10px, calc(3rem + 4vh) , 146px);
+        width: auto;
+        transition: all 0.5s;
+    }
+
+    .navigation .about a:hover,
+    .navigation .works a:hover,
+    .navigation .resume a:hover,
+    .navigation .contact a:hover{
+        color: var(--dark);
+    }
+
+    .navigation li:hover .small_form{
+        height: clamp(10px, calc(4rem + 5vh) , 146px);
+        width: auto;
+    }
+    
+    .hidden a{
+        display: none;
+    } 
+    
+}

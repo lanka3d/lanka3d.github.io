@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanKa Studios - About me</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+</head>
+<body>
+    <header class="header">
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="small_logo_div">
+            <a href="./index.html">
+            <picture>
+                <source class="small_logo" srcset="./assets/icon/logo_small.svg" type="image/svg+xml">
+                <img class="small_logo" src="./assets/icon/logo_small.svg" alt="Small Ellipse" />
+            </picture>
+            </a>
+        </div>
+        <nav>
+            <ul class="navigation">
+            <li class="about active"><a href="./index.html">About</a>
+                <picture>
+                    <source class="small_form ellipse" srcset="./assets/forms/ellipse.svg" type="image/svg+xml">
+                    <img class="small_form ellipse" src="./assets/forms/ellipse.svg" alt="Small Ellipse" />
+                </picture>
+            </li>
+            <li class="works"><a href="./html/works.html">Works</a>
+                <picture>
+                    <source class="small_form rectangle" srcset="./assets/forms/rectangle.svg" type="image/svg+xml">
+                    <img class="small_form rectangle" src="./assets/forms/rectangle.svg" alt="Small Rectangle" />
+                </picture></li>
+            <li class="hidden"><a href="./index.html">
+                <picture>
+                    <source class="logo_svg" srcset="./assets/icon/logo.svg" type="image/svg+xml">
+                    <img class="logo_svg" src="./assets/icon/logo.svg" alt="LankaStudios Logo" />
+                </picture></a>
+            </li>
+            <li class="resume"><a href="./html/resume.html">Resumé</a>
+                <picture>
+                    <source class="small_form triangle" srcset="./assets/forms/triangle.svg" type="image/svg+xml">
+                    <img class="small_form triangle" src="./assets/forms/triangle.svg" alt="Small Triangle" />
+                </picture></li>
+            <li class="contact"><a href="./html/contact.html">Contact</a>
+                <picture>
+                    <source class="small_form star" srcset="./assets/forms/star.svg" type="image/svg+xml">
+                    <img class="small_form star" src="./assets/forms/star.svg" alt="Small Star" />
+                </picture></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="title">
+        <h1 class="headline">About me</h1>
+        <picture>
+            <source class="form ellipse" srcset="./assets/forms/ellipse.svg" type="image/svg+xml">
+            <img class="form ellipse" src="./assets/forms/ellipse.svg" alt="Big Ellipse" />
+        </picture>
+        </div>
+
+        <section class="content_1 cont_1 pink">
+            <picture>
+                <source class="profile" srcset="./assets/img/me.svg" type="image/svg+xml">
+                <img class="profile" src="./assets/img/me.svg" alt="Profile Picture" />
+            </picture>
+            <div class="welcome">
+                <h3>
+                    Heii, I’m <strong>Leanne Klemm</strong>!
+                </h3>
+                <p>
+                    I’m 24 and living in a shared house in Trier, where I’m diving into all things creative as an <strong>Intermedia Design</strong> student. 
+                </p>
+                <p>
+                    With a background in <strong>IT</strong> I got a bit of a techy edge, but it’s the mix of creativity and logic that really lights me up. I’m fascinated by the space where <strong>digital meets design</strong> — how visuals, stories, and tech can come together to make something powerful.
+                </p>
+                <p>
+                    When I’m not studying, you can find me <strong>travelling</strong> the world, <strong>reading</strong> about another one, <strong>sketching</strong> my latest ideas or letting my mind wander and dream. 
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <nav class="foot_nav">
+            <li><a href="./html/datenschutz.html">Privace Policy</a></li>
+            <li><a href="#">
+                <picture>
+                <source class="arrow_svg" srcset="./assets/forms/arrow.svg" type="image/svg+xml">
+                <img class="arrow_svg" src="./assets/forms/arrow.svg" alt="Arrow Up" />
+                </picture>
+            </a></li>
+            <li><a href="./html/impressum.html">Legal Details</a></li>
+        </nav>
+    </footer>
+
+    <script>
+        let hamburgerIcon = document.querySelector(".hamburger-icon");
+        let header = document.querySelector(".header");
+        console.log(hamburgerIcon);
+
+        hamburgerIcon.addEventListener("click", (e)=>{
+            header.classList.toggle("on");
+        })
+    </script>
+</body>
+</html>
