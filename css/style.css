@@ -118,7 +118,7 @@ h1, h2{
     text-transform: uppercase;
     position: absolute;
     width: 100%;
-    top: 3rem;
+    top: 5.7rem;
 }
 
 .form{
@@ -389,6 +389,9 @@ h3{
     .main{
     margin-left: 1rem;
     margin-right: 1rem;
+    }
+    .headline{
+    top: 3rem;
     }
     
     .form{
